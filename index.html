@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!---importando o css-->
+    <link rel="stylesheet" href="Css/estilo.css">
+    <title>Calculadora</title>
+
+</head>
+<body>
+    <!-- Criação do fórmulario -->
+    <form class="form">
+        <fieldset>
+            <h2>Calculadora</h2>
+            <h3>Fórmula do 2 grau</h3>
+            <input type="number" id="a" required="required" placeholder="Digite o valor de A">
+            <input type="number" id="b" required="required" placeholder="Digite o valor de B">
+            <input type="number" id="c" required="required" placeholder="Digite o valor de C">
+            <!---Paragrafo que mostra a resposta do Javascript-->
+            <div>
+                <p id="resposta"></p>
+            </div>
+            <!---Botão responsavel por chamar a função calcular no JavaScript -->
+            <button type="button" onclick="calcular()">Calcular</button>
+        </fieldset>
+    </form>
+    <!-- Importando o JavaScript -->
+    <script src="JavaScript/Calcular.js"></script>
+    
+</body>
+    <div class="nota">
+        <p>Criação: Welis Vinicio </p>
+        <p>Email: welisprogramador@gmail.com </p>
+        <p>Ano: 2021 </p>
+    </div>
+</html>
