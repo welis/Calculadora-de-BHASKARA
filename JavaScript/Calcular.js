@@ -1,11 +1,11 @@
 //Funçao calcular
 function calcular(){
-    var a = parseFloat(document.getElementById("a").value);
-    var b = parseFloat(document.getElementById("b").value);
-    var c = parseFloat(document.getElementById("c").value);
+    var a = parseInt(document.getElementById("a").value);
+    var b = parseInt(document.getElementById("b").value);
+    var c = parseInt(document.getElementById("c").value);
 
     const delta = b * b - 4 * a * c;
-
+    
     const x1 = (-b + Math.sqrt(delta)) / (2 * a);
     const x2 = (-b - Math.sqrt(delta)) / (2 * a);
     
@@ -16,4 +16,11 @@ function calcular(){
     } else {
         document.getElementById("resposta").innerHTML = "As raízes da equação são " + x1.toFixed(2) + " e " + x2.toFixed(2);
     }
+}
+
+function limpar(){
+    document.getElementById("a").value = "";
+    document.getElementById("b").value = "";
+    document.getElementById("c").value = "";
+    document.getElementById("resposta").innerHTML = "";
 }
